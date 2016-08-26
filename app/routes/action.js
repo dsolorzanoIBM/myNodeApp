@@ -21,7 +21,7 @@ router.post('/', function(req, res, next) {
 	});
 	current_request.save(function (err, results) {
 		if (err) {
-			res.send('Error saving to DDBB');
+			res.send('Error while saving to DDBB');
 			console.error(e);
 			process.exit(1);
 		} else {
