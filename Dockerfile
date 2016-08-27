@@ -1,4 +1,4 @@
-FROM node:latest
+FROM registry.eu-gb.bluemix.net/ibmnode
 MAINTAINER d@d.s
 
 WORKDIR /srv
@@ -7,5 +7,5 @@ WORKDIR /srv/app
 
 ADD app /srv/app/
 
-EXPOSE 3000
+EXPOSE 80
 CMD ["node","app.js"]
